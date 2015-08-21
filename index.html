@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Peta Indonesia</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" />
+	<script type="text/javascript" src="redist/jquery.1.7.2.min.js"></script>
+	<script type="text/javascript" src="src/redist/when.js"></script>
+	<script type="text/javascript" src="src/core.js"></script>
+	<script type="text/javascript" src="src/graphics.js"></script>
+	<script type="text/javascript" src="src/mapimage.js"></script>
+	<script type="text/javascript" src="src/mapdata.js"></script>
+	<script type="text/javascript" src="src/areadata.js"></script>
+	<script type="text/javascript" src="src/areacorners.js"></script>
+	<script type="text/javascript" src="src/scale.js"></script>
+	<script type="text/javascript" src="src/tooltip.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="padiMap.css" />
+</head>
+
+<body>
+<div id = "wrapper">
+	<h1>Peta Indonesia</h1>
+	<div id="map_demo" style="width:1024px; height:402px;">
+		<div style="width:1024px; border:0; overflow: hidden; float:left;">
+			<img style="width:1024px;border:0;" id="indo_image" src="peta-indo-900px.jpg" usemap="#indonesia" >
+		</div>
+	</div>
+</div>
+<map id="indo_image_map" name="indonesia">
+  <area href="#" state="aceh" full="DI Aceh" shape="poly" alt="Aceh" coords="31,82,34,79,37,82,41,85,47,90,46,92,42,92,39,89,35,88" />
+  <area href="#" state="aceh" full="DI Aceh" shape="poly" alt="Aceh" coords="76,94,70,93,68,91,67,85,67,82,64,81,62,77,61,74,59,75,57,71,53,65,46,64,43,62,39,57,36,54,32,51,29,47,25,44,24,39,21,36,23,30,26,29,31,29,35,31,37,33,41,35,45,36,51,37,52,35,59,36,61,37,66,36,70,40,74,43,75,49,79,50,81,52,80,55,77,58,77,60,72,65,75,72,73,74,74,77,72,80,77,84,76,88" />
+  <area href="#" state="aceh" full="DI Aceh" shape="circle" alt="Aceh" coords="23,24,2" />
+  <area href="#" state="aceh" full="DI Aceh" shape="circle" alt="Aceh" coords="20,22,1" />
+  <area href="#" state="aceh" full="DI Aceh" shape="circle" alt="Aceh" coords="19,28,2" />
+  <area href="#" state="aceh" full="DI Aceh" shape="circle" alt="Aceh" coords="61,94,3" />
+  <area href="#" state="aceh" full="DI Aceh" shape="circle" alt="Aceh" coords="57,95,1" />
+  <area href="#" state="aceh" full="DI Aceh" shape="circle" alt="Aceh" coords="47,95,2" />
+
+  <area href="#" state="sumbar" full="Sumatera Barat" shape="poly" alt="Sumatera Barat" coords="113,182,111,185,112,190,116,191,116,194,122,197,124,195,122,190,118,186" />
+  <area href="#" state="sumbar" full="Sumatera Barat" shape="poly" alt="Sumatera Barat" coords="82,148,85,146,86,142,86,138,83,135,79,135,79,138,83,140,81,143" />
+  <area href="#" state="sumbar" full="Sumatera Barat" shape="poly" alt="Sumatera Barat" coords="104,174,102,176,106,180,110,181,110,179,109,176" />
+  <area href="#" state="sumbar" full="Sumatera Barat" shape="poly" alt="Sumatera Barat" coords="87,153,86,159,89,164,92,168,94,170,99,170,100,167,98,163,96,159,94,155" />
+  <area href="#" state="sumbar" full="Sumatera Barat" shape="poly" alt="Sumatera Barat" coords="129,177,130,172,127,170,125,166,124,161,121,161,119,158,120,155,116,149,112,144,109,141,107,136,103,133,98,132,97,130,104,126,111,128,113,125,109,121,117,122,117,125,119,128,123,127,130,132,130,137,127,138,130,142,136,148,138,151,148,155,148,159,145,161,145,164,141,169,134,169,135,174,138,179,132,183" />
+
+  <area href="#" state="sumut" full="Sumatera Utara" shape="circle" alt="Sumatera Utara" coords="83,104,2" />
+  <area href="#" state="sumut" full="Sumatera Utara" shape="poly" alt="Sumatera Utara" coords="57,107,62,108,63,106,66,108,70,115,75,116,74,125,72,126,69,125,67,122,66,119,62,118,62,115" />
+  <area href="#" state="sumut" full="Sumatera Utara" shape="poly" alt="Sumatera Utara" coords="91,105,89,106,90,111,92,115,93,121,95,123,96,126,96,130,104,126,110,128,113,125,109,121,117,122,118,118,118,113,115,110,122,108,122,105,122,103,120,99,119,89,118,86,116,84,113,84,113,80,110,79,110,76,107,75,95,66,88,63,88,62,82,58,79,55,77,58,76,61,72,65,75,72,73,74,74,77,72,80,76,83,76,88,77,90,77,95,80,97,84,99" />
+
+  <area href="#" state="lampung" full="Lampung" shape="poly" alt="Lampung" coords="202,249,203,245,199,242,200,240,205,241,210,247,213,240,224,248,226,228,225,221,224,215,219,214,219,211,214,207,210,215,195,221,195,229,188,230,185,227,181,219,181,230,188,235,191,240" />
+
+  <area href="#" state="babel" full="Bangka Belitung" shape="poly" alt="Bangka Belitung" coords="258,184,264,184,269,186,271,189,271,192,269,196,266,199,263,195,262,197,258,197,256,194,250,192" />
+
+  <area href="#" state="jambi" full="Jambi" shape="poly" alt="Jambi" coords="138,179,141,179,143,184,147,187,153,189,157,186,161,188,167,185,168,180,174,182,174,177,179,182,180,179,180,174,188,170,194,172,198,169,196,156,187,155,185,156,177,151,167,151,163,155,162,157,158,156,156,153,151,153,148,155,148,159,145,161,145,164,141,169,135,169,135,173" />
+
+  <area href="#" state="kepri" full="Kepulauan Riau"  shape="rect" alt="Kepulauan Riau" coords="177,141,179,141" />
+  <area href="#" state="kepri" full="Kepulauan Riau"  shape="rect" alt="Kepulauan Riau" coords="177,144,180,145" />
+  <area href="#" state="kepri" full="Kepulauan Riau"  shape="rect" alt="Kepulauan Riau" coords="180,140,184,142" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="poly" alt="Riau" coords="201,135,204,139,202,140,197,141,196,136" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="196,144,3" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="205,140,2" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="282,87,1" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="280,79,2" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="231,75,1" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="221,79,2" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="201,121,1" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="184,119,1" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="189,114,1" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="173,123,2" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="177,120,2" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="circle" alt="Riau" coords="176,114,1" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="poly" alt="Riau" coords="268,67,272,67,273,64,273,60,269,55,265,58,264,61" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="poly" alt="Riau" coords="193,115,195,112,200,113,203,116,203,118,201,120,198,120" />
+  <area href="#" state="kepri" full="Kepulauan Riau" shape="poly" alt="Riau" coords="195,124,195,120,191,118,189,120" />
+
+  <area href="#" state="riau" full="Riau" shape="circle" alt="Riau" coords="142,98,3" />
+  <area href="#" state="riau" full="Riau" shape="poly" alt="Riau" coords="160,114,172,121,168,122,163,121,159,120" />
+  <area href="#" state="riau" full="Riau" shape="poly" alt="Riau" coords="163,114,168,113,172,116,174,119,172,120,169,119" />
+  <area href="#" state="riau" full="Riau" shape="poly" alt="Riau" coords="159,118,160,114,159,111,154,110,154,114" />
+  <area href="#" state="riau" full="Riau" shape="poly" alt="Riau" coords="161,111,161,107,158,106,152,105,150,106,152,108,155,109" />
+  <area href="#" state="riau" full="Riau" shape="poly" alt="Riau" coords="129,92,133,92,137,96,140,104,143,104,147,105,152,109,154,111,154,117,160,122,168,122,170,125,171,127,166,131,159,131,161,134,164,133,168,132,173,129,177,126,180,128,184,131,185,135,183,137,181,137,179,138,176,141,177,144,177,147,177,151,167,151,163,155,162,157,158,156,156,153,151,153,148,155,138,151,136,148,127,138,130,137,130,132,123,127,119,128,117,125,117,122,118,118,118,113,115,110,122,108,122,103,120,99,119,90,119,88,122,93" />
+
+  <area href="#" state="babel" full="Bangka Belitung" shape="poly" alt="Bangka Belitung" coords="210,174,212,172,216,171,214,167,216,165,219,165,221,170,224,170,222,165,226,165,230,170,231,175,231,179,234,183,241,184,242,186,239,189,239,192,243,190,245,193,238,196,234,193,232,191,227,190,225,186,226,183,222,182,223,177,219,176,216,177" />
+  <area href="#" state="sumsel" full="Sumatera Selatan" shape="poly" alt="Sumatera Selatan" coords="224,215,220,214,219,211,214,207,210,215,195,221,195,229,188,230,185,227,181,219,173,216,173,212,167,213,163,208,170,202,166,199,161,200,159,195,155,194,155,191,153,189,157,186,161,188,167,185,168,180,174,182,174,177,178,182,180,178,180,174,188,170,193,172,198,169,198,173,201,171,201,175,206,175,206,179,203,181,209,179,219,181,222,188,225,193,228,193,229,198,224,203,224,206,226,209" />
+
+  <area href="#" state="bengkulu" full="Bengkulu" shape="circle" alt="Bengkulu" coords="155,238,4" />
+  <area href="#" state="bengkulu" full="Bengkulu" shape="poly" alt="Bengkulu" coords="181,230,176,227,168,222,157,212,156,206,152,204,145,200,141,195,140,191,132,183,137,180,141,179,143,184,147,187,154,189,156,191,155,194,159,195,161,199,166,199,171,202,163,208,167,213,173,212,173,216,181,219" />
+
+  <area href=#" state="jakarta" full="DKI Jakarta" shape="poly" title="DKI Jakarta" alt="DKI Jakarta" coords="246,257,242,256,240,251,247,251" />
+
+  <area href=#" state="banten" full="Banten" shape="poly" alt="Banten" coords="234,269,237,265,235,263,236,258,240,258,242,256,240,251,234,250,231,249,229,250,228,248,223,253,223,259,219,258,219,263,215,263,213,259,209,261,212,262,212,267,217,267,223,267" />
+
+  <area href="#" state="jabar" full="Jawa Barat" shape="poly" alt="Jawa Barat" coords="233,273,237,278,252,278,257,280,263,284,274,284,275,282,279,282,280,277,276,275,276,272,281,271,281,265,275,264,276,259,270,254,268,256,260,253,259,255,253,249,246,247,247,251,246,257,242,256,240,258,235,258,235,263,237,265" />
+
+  <area href="#" state="jateng" full="Jawa Tengah" shape="poly" alt="Jawa Tengah" coords="334,264,334,273,331,275,325,274,326,283,328,285,328,288,323,290,323,292,319,292,318,284,313,284,311,279,310,282,305,281,304,285,292,283,283,283,279,281,280,277,276,275,276,272,281,271,281,265,290,266,294,265,300,267,306,267,310,268,313,268,315,264,315,260,316,258,323,258,324,261,325,264,329,263" />
+
+  <area href="#" state="jogjakarta" full="DI Yogyakarta" shape="poly" alt="DI Yogyakarta" coords="304,286,305,281,310,282,311,279,313,284,318,285,319,292,313,291" />
+
+  <area href="#" shape="circle" state="jatim" full="Jawa Timur" alt="Jawa Timur" coords="385,270,2" />
+  <area href="#" shape="circle" state="jatim" full="Jawa Timur" alt="Jawa Timur" coords="365,296,2" />
+  <area href="#" shape="poly" state="jatim" full="Jawa Timur" alt="Jawa Timur" coords="400,265,400,270,410,269,410,265" />
+  <area href="#" shape="poly" state="jatim" full="Jawa Timur" alt="Jawa Timur" coords="354,270,357,266,377,266,382,267,376,272,370,273,363,273" />
+  <area href="#" shape="poly" state="jatim" full="Jawa Timur" alt="Jawa Timur" coords="321,292,321,289,328,286,328,283,325,281,325,274,331,274,333,273,334,265,336,265,340,266,344,267,351,267,353,273,357,274,357,277,355,278,356,281,364,283,368,283,372,282,379,281,387,284,388,288,386,292,386,297,390,301,391,303,387,302,384,300,377,299,368,295,366,294,360,294,359,296,353,296,349,295,347,294,337,293,334,295,330,294,329,293" />
+
+  <area href="#" state="bali" full="Bali" shape="poly" alt="Bali" coords="409,303,411,302,410,298" />
+  <area href="#" state="bali" full="Bali" shape="poly" alt="Bali" coords="401,305,403,304" />
+  <area href="#" state="bali" full="Bali" shape="poly" alt="Bali" coords="388,290,393,291,399,291,401,287,408,291,413,295,408,299,402,303,398,299,394,296,390,296" />
+
+  <area href="#" state="kalbar" full="Kalimantan Barat" shape="circle" alt="Kalimantan Barat" coords="282,165,3" />
+  <area href="#" state="kalbar" full="Kalimantan Barat" shape="poly" alt="Kalimantan Barat" coords="290,98,290,103,285,107,282,115,282,119,279,120,283,130,288,135,285,137,286,147,291,149,287,150,288,153,294,154,292,156,291,162,299,160,301,159,304,166,300,170,301,172,305,173,304,180,307,194,312,192,317,194,326,187,325,182,321,175,322,168,320,165,334,158,334,154,346,149,350,149,363,145,369,138,366,130,371,130,377,123,376,116,382,111,389,108,383,107,377,109,373,112,361,108,361,105,343,107,343,114,339,114,336,117,324,115,312,119,296,104" />
+  <area href="#" state="kalteng" full="Kalimantan Tengah" shape="poly" title="Kalimantan Tengah" alt="Kalimantan Tengah" coords="317,194,326,187,324,180,321,174,322,168,320,165,325,163,333,158,334,154,345,149,351,149,363,145,365,143,369,138,366,131,371,130,377,123,397,122,396,130,397,140,404,136,403,144,406,154,412,157,412,161,409,163,406,162,403,168,403,175,399,178,393,179,394,187,388,190,388,193,383,200,371,203,371,196,366,199,361,193,360,197,351,202,346,199,338,204,337,193,329,192" />
+
+  <area href="#" state="kalsel" full="Kalimantan Selatan" shape="poly" alt="Kalimantan Selatan" coords="391,215,395,214,399,212,404,210,408,208,412,207,416,204,417,201,421,196,419,194,419,189,421,192,422,193,423,192,424,186,422,185,422,184,426,185,428,183,427,181,414,180,411,170,408,164,409,163,406,162,403,168,403,175,399,178,393,179,394,187,388,190,388,193,383,200,387,202,390,203" />
+  <area href="#" state="kalsel" full="Kalimantan Selatan" shape="rect" alt="Kalimantan Selatan" coords="423,200,425,203" />
+  <area href="#" state="kalsel" full="Kalimantan Selatan" shape="poly" alt="Kalimantan Selatan" coords="419,213,423,210,422,204,422,197,418,202,417,206" />
+
+
+  <area href="#" state="kaltim" full="Kalimantan Timur" shape="poly" alt="Kalimantan Timur" coords="427,181,414,180,411,170,408,164,412,162,412,157,406,154,403,144,404,136,397,140,396,130,397,122,377,124,376,116,382,110,387,109,392,106,392,101,409,98,413,96,415,98,419,99,421,94,430,83,431,86,443,85,448,81,458,93,451,98,454,102,467,110,475,117,470,122,458,120,451,122,446,133,445,139,445,144,448,147,448,150,442,154,435,162,428,165,425,170" />
+
+  <area href="#" state="kalut" full="Kalimantan Utara" shape="rect" alt="Kalimantan Utara" coords="447,57,447,57" />
+  <area href="#" state="kalut" full="Kalimantan Utara" shape="rect" alt="Kalimantan Utara" coords="450,57,452,58" />
+  <area href="#" state="kalut" full="Kalimantan Utara" shape="rect" alt="Kalimantan Utara" coords="450,67,452,68" />
+  <area href="#" state="kalut" full="Kalimantan Utara" shape="rect" alt="Kalimantan Utara" coords="445,70,448,72" />
+  <area href="#" state="kalut" full="Kalimantan Utara" shape="poly" alt="Kalimantan Utara" coords="441,53,426,53,423,52,420,52,417,53,414,51,412,55,410,58,409,61,408,65,409,70,408,72,408,77,402,79,399,82,398,86,401,88,398,91,394,93,393,94,393,98,395,100,396,100,405,99,408,98,413,96,415,98,419,99,421,95,430,83,431,86,443,84,447,81,448,77,441,75,444,72,438,68,440,67,444,67,445,64,448,67,451,67,450,64,448,62,446,59,443,58" />
+
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="rect" alt="Nusa Tenggara Timur" coords="504,269,506,271" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="rect" alt="Nusa Tenggara Timur" coords="525,274,527,276" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="rect" alt="Nusa Tenggara Timur" coords="548,297,549,298" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="556,295,556,292,551,292,551,298" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="567,292,564,292,560,295,556,296,554,298,559,300,562,299" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="572,299,576,292,573,292,570,294,567,296" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="591,295,591,291,581,291,581,292,579,291,577,291,576,293,577,294,576,295,576,298,579,298,582,296" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="497,292,506,292,513,295,516,297,520,299,523,299,523,297,532,297,536,299,541,299,542,297,542,294,546,294,548,293,545,292,547,289,549,290,550,292,550,294,548,295,546,298,547,300,541,302,533,302,528,305,525,305,522,303,519,303,518,305,514,305,513,306,510,306,508,304,507,305,504,303,500,304,498,304,496,303,493,304,491,304,490,303,489,300,491,297" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="rect" alt="Nusa Tenggara Timur" coords="537,296,538,296" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="rect" alt="Nusa Tenggara Timur" coords="485,300,487,302" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="559,332,554,331" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="556,333,549,340,546,340,547,344,549,344,552,342,557,341,559,338" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="585,306,577,310,575,317,568,313,562,318,561,326,564,327,559,330,562,333,567,333,572,329,578,329,587,320,590,316,587,312,591,311,593,308" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="530,333,525,335,529,339" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="483,296,480,298,480,302,483,303" />
+  <area href="#" state="ntt" full="Nusa Tenggara Timur"  shape="poly" alt="Nusa Tenggara Timur" coords="472,318,474,314,478,313,489,313,493,312,498,316,498,319,502,318,510,326,508,331,503,332,501,333,494,331,492,326,488,325,485,322,481,323" />
+
+
+  <area href="#" state="ntb" full="Nusa Tenggara Barat"  shape="rect" alt="Nusa Tenggara Barat" coords="470,303,471,303" />
+  <area href="#" state="ntb" full="Nusa Tenggara Barat"  shape="rect" alt="Nusa Tenggara Barat" coords="474,291,476,291" />
+  <area href="#" state="ntb" full="Nusa Tenggara Barat"  shape="poly" alt="Nusa Tenggara Barat" coords="444,290,449,290,449,293,446,295" />
+  <area href="#" state="ntb" full="Nusa Tenggara Barat"  shape="poly" alt="Nusa Tenggara Barat" coords="417,296,423,292,428,292,432,295,430,298,425,305,421,306,420,305,415,304,414,302,418,302" />
+  <area href="#" state="ntb" full="Nusa Tenggara Barat"  shape="poly" alt="Nusa Tenggara Barat" coords="439,294,435,298,431,300,431,302,433,304,431,304,431,307,433,308,436,309,438,309,440,308,446,308,449,306,454,305,458,304,460,303,462,300,463,300,463,302,462,304,464,304,468,305,469,302,472,301,474,302,476,302,477,302,477,300,475,300,475,297,473,294,469,293,468,296,468,299,467,293,463,292,461,294,459,293,458,290,453,290,450,291,450,293,452,295,454,297,458,298,460,299,459,300,456,300,454,302,451,301,450,298,445,296,444,297" />
+
+  <area href="#" state="maluku" full="Maluku"shape="poly" alt="Maluku" coords="674,284,680,284,681,288,679,290,676,289" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="760,250,761,251" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="737,243,738,244" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="734,241,735,242" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="737,246,738,246" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="733,244,735,247" />
+  <area href="#" state="maluku" full="Maluku"shape="poly" alt="Maluku" coords="740,245,743,242,744,236,741,236" />
+  <area href="#" state="maluku" full="Maluku"shape="poly" alt="Maluku" coords="763,243,766,243,768,239,771,239,773,243,773,248,772,249,773,251,773,256,770,258,769,261,765,267,762,267,760,266,760,260,761,258,761,254,765,251,764,248" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="632,278,635,281" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="628,288,631,289" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="640,289,644,291" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="646,291,649,293" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="637,291,639,292" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="661,290,664,292" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="654,269,657,272" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="700,290,703,291" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="697,293,699,294" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="701,276,703,277" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="716,271,720,273" />
+  <area href="#" state="maluku" full="Maluku"shape="poly" alt="Maluku" coords="713,281,715,278,715,271,712,271,710,273,710,276,707,277,705,279,705,282,704,285,703,288,704,289,708,288,710,287" />
+  <area href="#" state="maluku" full="Maluku"shape="poly" alt="Maluku" coords="614,194,623,194,627,196,628,197,627,199,627,200,631,200,631,202,630,205,627,206,625,207,623,208,621,209,616,208,613,206,610,204,608,202,607,200,607,197,607,195,609,195" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="639,195,641,198" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="635,197,637,199" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="642,191,643,192" />
+  <area href="#" state="maluku" full="Maluku"shape="rect" alt="Maluku" coords="628,207,629,209" />
+  <area href="#" state="maluku" full="Maluku"shape="poly" alt="Maluku" coords="641,197,643,201,646,200,646,194" />
+  <area href="#" state="maluku" full="Maluku"shape="poly" alt="Maluku" coords="660,204,653,206,651,203" />
+  <area href="#" state="maluku" full="Maluku"shape="poly" alt="Maluku" coords="650,202,643,204,643,208,648,208,651,207" />
+  <area href="#" state="maluku" full="Maluku"shape="poly" alt="Maluku" coords="698,209,700,204,698,201,696,200,694,196,691,193,682,192,675,189,671,189,667,192,665,189,661,189,648,189,647,192,647,195,648,196,650,198,652,202,654,202,658,201,661,197,662,197,664,200,667,201,674,202,675,202,674,200,677,199,681,200,682,202,685,204,688,204,692,206" />
+  <area href="#" state="maluku" full="Maluku" shape="poly" alt="Maluku" coords="602,288,605,281,612,281,618,279,625,282,619,285,616,287,610,287" />
+
+  <area href="#" state="malut" full="Maluku Utara"shape="poly" alt="Maluku Utara" coords="621,48,624,50,625,54,624,59,623,61,619,60,619,57,621,55,618,53" />
+  <area href="#" state="malut" full="Maluku Utara"shape="poly" alt="Maluku Utara" coords="608,174,610,185,606,184,603,178,603,174" />
+  <area href="#" state="malut" full="Maluku Utara"shape="poly" alt="Maluku Utara" coords="612,171,611,168,595,169,595,172,598,173,602,174,606,173" />
+  <area href="#" state="malut" full="Maluku Utara"shape="poly" alt="Maluku Utara" coords="581,174,576,174,575,172,575,169,577,167,582,167,586,167,591,168,594,170,594,172,589,173" />
+  <area href="#" state="malut" full="Maluku Utara"shape="poly" alt="Maluku Utara" coords="634,163,633,166,634,169,639,170,641,168,646,169,649,168,647,166,645,164,641,162" />
+  <area href="#" state="malut" full="Maluku Utara"shape="circle" alt="Maluku Utara" coords="636,158,2" />
+  <area href="#" state="malut" full="Maluku Utara"shape="circle" alt="Maluku Utara" coords="647,90,1" />
+  <area href="#" state="malut" full="Maluku Utara"shape="poly" alt="Maluku Utara" coords="649,96,649,93,651,88,656,86,658,89,658,93,656,96" />
+  <area href="#" state="malut" full="Maluku Utara"shape="rect" alt="Maluku Utara" coords="650,151,652,153" />
+  <area href="#" state="malut" full="Maluku Utara"shape="rect" alt="Maluku Utara" coords="659,129,661,130" />
+  <area href="#" state="malut" full="Maluku Utara"shape="rect" alt="Maluku Utara" coords="632,122,634,124" />
+  <area href="#" state="malut" full="Maluku Utara"shape="rect" alt="Maluku Utara" coords="630,119,632,120" />
+  <area href="#" state="malut" full="Maluku Utara"shape="rect" alt="Maluku Utara" coords="631,128,632,130" />
+  <area href="#" state="malut" full="Maluku Utara"shape="rect" alt="Maluku Utara" coords="628,147,631,151" />
+  <area href="#" state="malut" full="Maluku Utara"shape="rect" alt="Maluku Utara" coords="637,148,643,152" />
+  <area href="#" state="malut" full="Maluku Utara"shape="rect" alt="Maluku Utara" coords="627,140,629,144" />
+  <area href="#" state="malut" full="Maluku Utara"shape="poly" alt="Maluku Utara" coords="636,152,638,149,638,147,639,145,636,142,632,142,631,146" />
+  <area href="#" state="malut" full="Maluku Utara"shape="poly" alt="Maluku Utara" coords="646,94,643,94,641,97,636,102,636,109,634,112,634,116,636,119,637,121,636,124,636,127,637,129,639,131,639,133,638,140,640,143,643,145,645,149,648,151,650,150,648,148,646,144,645,140,643,136,644,133,644,129,644,127,648,128,650,129,654,129,656,130,658,132,658,129,659,125,654,124,651,123,649,121,651,120,654,118,657,117,658,116,659,111,658,108,658,106,653,107,650,109,646,112,648,113,648,115,646,115,644,116,643,118,643,119,642,120,640,120,639,119,638,118,638,116,642,115,644,113,645,111,646,107,645,104,644,102,642,101" />
+
+  <area href="#" state="sulut" full="Sulawesi Utara" shape="circle" alt="Sulawesi Utara" coords="594,82,2" />
+  <area href="#" state="sulut" full="Sulawesi Utara" shape="circle" alt="Sulawesi Utara" coords="595,91,3" />
+  <area href="#" state="sulut" full="Sulawesi Utara" shape="poly" alt="Sulawesi Utara" coords="552,117,554,122,559,126,559,131,576,129,582,124,582,120,589,117,593,108,590,103,585,103,581,108,576,110,574,115,568,119,559,118" />
+  <area href="#" state="sulut" full="Sulawesi Utara"shape="poly" alt="Sulawesi Utara" coords="595,64,599,64,602,70,600,74,596,71" />
+
+  <area href="#" state="gorontalo" full="Gorontalo" shape="poly" alt="Gorontalo" coords="532,116,525,119,517,120,514,124,518,127,523,127,533,129,536,127,545,128,552,127,555,130,559,130,559,126,554,122,552,117,548,117,546,120,542,116" />
+
+  <area href="#" state="sulbar" full="Sulawesi Barat" shape="poly" alt="Sulawesi Barat" coords="473,203,480,202,483,201,483,197,487,196,484,189,489,188,489,182,487,178,490,174,489,170,487,163,483,161,486,157,483,153,479,159,479,170,481,173,476,173,476,179,476,183,469,186,469,190,471,191,469,195" />
+
+
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="poly" alt="Sulawesi Tengah" coords="509,111,512,110,516,112,520,112,522,115,532,116,524,119,517,120,514,124,518,127,515,128,509,128,506,126,502,126,496,131,494,137,493,143,495,150,498,153,502,153,505,157,505,160,506,162,512,161,514,163,515,158,522,152,524,151,526,153,534,153,536,150,542,150,545,151,548,150,545,148,551,146,555,146,558,149,559,152,558,155,555,156,552,153,551,153,546,154,544,158,541,163,537,166,530,168,527,170,525,172,523,173,520,170,518,170,518,171,519,174,521,175,527,178,531,185,532,188,537,191,536,194,540,197,537,199,536,198,525,193,525,190,527,187,519,182,512,180,506,177,500,172,494,172,490,174,487,163,483,161,486,157,483,153,486,152,487,149,491,152,491,149,488,146,488,142,491,136,488,132,490,128,493,127,493,122,496,121,499,117,502,121,504,121,505,116,508,116" />
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="rect" alt="Sulawesi Tengah" coords="485,135,487,137" />
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="rect" alt="Sulawesi Tengah" coords="528,141,533,142" />
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="rect" alt="Sulawesi Tengah" coords="526,144,528,144" />
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="rect" alt="Sulawesi Tengah" coords="522,137,523,139" />
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="rect" alt="Sulawesi Tengah" coords="551,169,553,171" />
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="rect" alt="Sulawesi Tengah" coords="558,164,560,168" />
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="rect" alt="Sulawesi Tengah" coords="564,171,565,173" />
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="poly" alt="Sulawesi Tengah" coords="561,161,557,159,554,161,551,166,553,167,555,166,556,164" />
+  <area href="#" state="sulteng" full="Sulawesi Tengah" shape="poly" alt="Sulawesi Tengah" coords="547,166,546,163,546,160,548,158,553,158,555,158,552,162" />
+
+  <area href="#" state="sulsel" full="Sulawesi Selatan" shape="poly" alt="Sulawesi Selatan" coords="498,246,504,245,506,253,502,260,498,253" />
+  <area href="#" state="sulsel" full="Sulawesi Selatan" shape="poly" alt="Sulawesi Selatan" coords="480,237,482,244,489,246,493,242,502,243,502,239,499,234,499,228,503,226,501,215,501,208,502,205,501,196,498,193,508,187,512,188,514,191,518,191,521,194,525,193,525,191,527,187,519,182,512,180,506,177,500,172,494,172,490,174,487,178,489,182,489,188,484,189,487,196,483,197,482,201,482,207,485,211,485,224,481,226,483,229" />
+
+  <area href="#" state="sultra" full="Sulawesi Tenggara" shape="circle" alt="Sulawesi Tenggara" coords="551,204,3" />
+  <area href="#" state="sultra" full="Sulawesi Tenggara" shape="circle" alt="Sulawesi Tenggara" coords="568,249,3" />
+  <area href="#" state="sultra" full="Sulawesi Tenggara" shape="circle" alt="Sulawesi Tenggara" coords="561,237,2" />
+  <area href="#" state="sultra" full="Sulawesi Tenggara" shape="poly" alt="Sulawesi Tenggara" coords="543,244,548,244,549,241,555,238,555,235,551,232,551,228,555,227,556,223,551,219,546,221,541,223,536,225,536,230,537,233,535,236,537,240,541,239" />
+  <area href="#" state="sultra" full="Sulawesi Tenggara" shape="poly" alt="Sulawesi Tenggara" coords="548,211,556,212,556,216,552,219" />
+  <area href="#" state="sultra" full="Sulawesi Tenggara" shape="poly" alt="Sulawesi Tenggara" coords="526,235,531,231,534,234,533,242" />
+  <area href="#" state="sultra" full="Sulawesi Tenggara" shape="poly" alt="Sulawesi Tenggara" coords="509,203,512,197,514,191,518,191,521,194,525,193,536,198,537,202,536,206,540,209,546,214,549,215,548,220,543,221,536,221,532,224,534,229,525,228,520,224,521,216,524,215,522,213,518,212" />
+
+  <area href="#" state="papua" full="Papua" shape="poly" alt="Papua" coords="891,310,891,268,888,263,892,256,892,208,892,186,888,185,887,181,873,179,867,179,853,172,843,168,832,163,817,170,819,176,814,175,809,178,805,176,802,181,801,185,795,188,794,193,786,199,779,198,775,196,776,191,771,190,764,200,782,208,775,216,781,222,796,222,800,224,809,228,812,230,820,231,829,236,836,241,836,245,840,249,842,258,848,262,844,268,850,272,846,277,836,278,826,296,841,298,854,296,858,290,863,292,870,291,873,292,885,305" />
+  <area href="#" state="papua" full="Papua" shape="poly" alt="Papua Barat" coords="785,165,798,165,815,168,811,173,804,174,794,173,788,171" />
+  <area href="#" state="papua" full="Papua" shape="poly" alt="Papua Barat" coords="784,146,797,149,806,158,802,160,792,159,791,154,785,153" />
+  <area href="#" state="papua" full="Papua" shape="circle" alt="Papua Barat" coords="776,155,3" />
+
+  <area href="#" state="papbar" full="Papua Barat"  shape="rect" alt="Papua Barat" coords="673,138,674,138" />
+  <area href="#" state="papbar" full="Papua Barat"  shape="poly" alt="Papua Barat" coords="708,141,704,136,698,135,696,137,698,141,693,137,689,140,693,142,697,144,699,144" />
+  <area href="#" state="papbar" full="Papua Barat"  shape="rect" alt="Papua Barat" coords="694,143,694,144" />
+  <area href="#" state="papbar" full="Papua Barat"  shape="rect" alt="Papua Barat" coords="679,143,680,144" />
+  <area href="#" state="papbar" full="Papua Barat"  shape="rect" alt="Papua Barat" coords="690,150,697,152" />
+  <area href="#" state="papbar" full="Papua Barat"  shape="rect" alt="Papua Barat" coords="678,157,681,157" />
+  <area href="#" state="papbar" full="Papua Barat"  shape="rect" alt="Papua Barat" coords="764,174,767,176" />
+  <area href="#" state="papbar" full="Papua Barat"  shape="poly" alt="Papua Barat" coords="687,175,683,175,678,173,678,170,690,167,692,169,693,174" />
+  <area href="#" state="papbar" full="Papua Barat"  shape="poly" alt="Papua Barat" coords="702,153,703,156,701,161,699,161,697,158,695,157,696,154" />
+  <area href="#" state="papbar" full="Papua Barat"  shape="poly" alt="Papua Barat" coords="725,143,736,143,742,145,745,148,748,150,759,150,761,152,759,155,764,160,764,163,762,166,761,169,761,171,762,174,761,177,762,180,766,184,766,187,767,189,769,188,768,184,770,183,771,183,771,186,771,190,764,200,782,208,775,216,773,216,772,214,772,212,777,211,771,210,769,212,766,210,764,211,762,211,761,208,758,209,755,204,754,206,753,204,752,202,754,200,753,199,753,197,756,195,757,194,756,191,754,194,753,195,752,201,749,202,750,204,747,207,747,210,746,213,739,214,737,212,736,209,735,205,738,205,739,202,736,201,736,198,734,200,732,198,727,192,721,191,723,188,726,187,728,187,731,187,734,190,736,189,742,182,744,181,746,183,748,185,748,187,750,185,753,184,752,187,754,185,756,186,754,182,759,182,756,179,757,176,753,178,748,179,743,178,739,180,737,178,734,180,732,178,728,179,725,178,721,175,719,172,721,168,718,166,719,165,715,166,712,164,710,164,709,162,707,164,705,164,701,164,703,161,704,158,706,157,707,153,708,150,711,150,715,150,718,149" />
+</map>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var $statelist, $indomap, ratio,
+        mapsterConfigured = function () {
+            var opts = $indomap.mapster('get_options', null, true);
+            if (!ratio) {
+                ratio = $indomap.width() / $indomap.height();
+            }
+            $('#stroke_highlight').prop("checked", opts.render_highlight.stroke);
+            $('#strokewidth_highlight').val(opts.render_highlight.strokeWidth);
+            $('#fill_highlight').val(opts.render_highlight.fillOpacity);
+            $('#strokeopacity_highlight').val(opts.render_highlight.strokeOpacity);
+            $('#stroke_select').prop("checked", opts.render_select.stroke);
+            $('#strokewidth_select').val(opts.render_select.strokeWidth);
+            $('#fill_select').val(opts.render_select.fillOpacity);
+            $('#strokeopacity_select').val(opts.render_select.strokeOpacity);
+            $('#mouseout-delay').val(opts.mouseoutDelay);
+            $('#img_width').val($indomap.width());
+        },
+        default_options =
+        {
+            fillOpacity: 0.5,
+            render_highlight: {
+                fillColor: '2aff00',
+                stroke: true
+            },
+            render_select: {
+                fillColor: 'ff000c',
+                stroke: false
+            },
+            mouseoutDelay: 0,
+            fadeInterval: 50,
+            isSelectable: false,
+            singleSelect: false,
+            mapKey: 'state',
+            mapValue: 'full',
+            listKey: 'name',
+            listSelectedAttribute: 'checked',
+            sortList: "asc",
+            onConfigured: mapsterConfigured,
+            onClick:function(data){
+				$(this).mapster('tooltip','key');
+			},
+            showToolTip: false,
+            toolTipClose: ["tooltip-click"],
+            areas: [
+                { key: "aceh",
+                    toolTip: '<div>ATJEH<br />MERDEKA</div>',
+                },
+                { key: "sumut",
+                    toolTip: '<div>SOEMATRA TIMOER<br />MERDEKA</div>',
+                },
+                { key: "sumbar",
+                    toolTip: '<div>SOEMATRA TIMOER<br />MERDEKA</div>',
+                },
+                { key: "riau",
+                    toolTip: '<div>RIAOE<br />MERDEKA</div>',
+                },
+                { key: "jambi",
+                    toolTip: '<div>DJAMBI<br />MERDEKA</div>',
+                },
+                { key: "lampung",
+                    toolTip: '<div>LAMPOENG<br />MERDEKA</div>',
+                },
+                { key: "babel",
+                    toolTip: '<div>BANGKA BELITOENG<br />MERDEKA</div>',
+                },
+                { key: "kepri",
+                    toolTip: '<div>KEP. RIAOE<br />MERDEKA</div>',
+                },
+                { key: "bengkulu",
+                    toolTip: '<div>BENGKOELOE<br />MERDEKA</div>',
+                },
+                { key: "sumsel",
+                    toolTip: '<div>SOEMATRA SELATAN<br />MERDEKA</div>',
+                },
+                { key: "jatim",
+                    toolTip: '<div>DJAWA TIMOER<br />MERDEKA</div>',
+                },
+                { key: "jateng",
+                    toolTip: '<div>DJAWA TENGAH<br />MERDEKA</div>',
+                },
+                { key: "jabar",
+                    toolTip: '<div>DJAWA BARAT<br />MERDEKA</div>',
+                },
+                { key: "jakarta",
+                    toolTip: '<div>DJAKARTA<br />MERDEKA</div>',
+                },
+                { key: "banten",
+                    toolTip: '<div>BANTEN<br /><img src="images/975653954.jpg"></div>',
+                },
+                { key: "jogjakarta",
+                    toolTip: '<div>DJOKDJAKARTA<br />MERDEKA</div>',
+                },
+                { key: "bali",
+                    toolTip: 'Pulau Bali',
+                },
+                { key: "ntb",
+                    toolTip: '<div>NOESA TENGGARA BARAT<br />MERDEKA</div>',
+                },
+                { key: "ntt",
+                    toolTip: '<div>NOESA TENGGARA TIMOER<br />MERDEKA</div>',
+                },
+                { key: "malut",
+                    toolTip: '<div>MALOEKOE OETARA<br />MERDEKA</div>',
+                },
+                { key: "maluku",
+                    toolTip: '<div>MALOEKOE<br />MERDEKA</div>',
+                },
+                { key: "papbar",
+                    toolTip: '<div>PAPOEA BARAT<br />MERDEKA</div>',
+                },
+                { key: "papua",
+                    toolTip: '<div>PAPOEA<br />MERDEKA</div>',
+                },
+                { key: "sulut",
+                    toolTip: '<div>SOELAWESW OETARA<br />MERDEKA</div>',
+                },
+                { key: "gorontalo",
+                    toolTip: '<div>GORONTALO<br />MERDEKA</div>',
+                },
+                { key: "sulteng",
+                    toolTip: '<div>SOELAWESI TENGAH<br />MERDEKA</div>',
+                },
+                { key: "sulbar",
+                    toolTip: '<div>SOELAWESI BARAT<br />MERDEKA</div>',
+                },
+                { key: "sulsel",
+                    toolTip: '<div>SOELAWESI SELATAN<br />MERDEKA</div>',
+                },
+                { key: "sultra",
+                    toolTip: '<div>SOELAWESI TENGGARA<br />MERDEKA</div>',
+                },
+                { key: "kalteng",
+                    toolTip: '<div>KALIMANTATAN TENGAH<br />MERDEKA</div>',
+                },
+                { key: "kalbar",
+                    toolTip: '<div>KALIMANTATAN BARAT<br />MERDEKA</div>',
+                },
+                { key: "kalsel",
+                    toolTip: '<div>KALIMANTATAN SELATAN<br />MERDEKA</div>',
+                },
+                { key: "kaltim",
+                    toolTip: '<div>KALIMANTATAN TIMOER<br />MERDEKA</div>',
+                },
+                { key: "kalut",
+                    toolTip: '<div>KALIMANTATAN OETARA<br />MERDEKA</div>',
+                }
+                ]
+        };
+        $statelist = $('#statelist');
+        $indomap = $('#indo_image');
+        $indomap.mapster(default_options);
+    });
+</script>
+</html>
